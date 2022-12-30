@@ -35,6 +35,7 @@ header {
 }
 .navbar > a:hover {
     color: #ea4d35;
+    font-size: 1.5rem;
 }
 .talk {
     padding: 12px 40px;
@@ -50,17 +51,18 @@ header {
 .talk:hover {
     background-color: #ea4d35;
     color: #fff;
-    text-shadow: 1px 1px 1px #000
+    text-shadow: 1px 1px 1px #000;
 }
 /* aca TERMINA el HEADER */
 
 /* aca EMPIEZA el HERO */
 .hero {
     display: flex;
+    flex-wrap: wrap;
 }
 .textoHero {
     margin-left: 13%;
-    margin-top: 10%;
+    margin-top: 8%;
     max-width: 60%;
 }
 .primerTexto {
@@ -81,9 +83,7 @@ header {
     font-weight: bolder;
     font-size: 1.3rem;
 }
-.asterisco {
-    color: #ea4d35;
-}
+
 .botones {
     margin-top: 3rem;
 }
@@ -108,4 +108,30 @@ header {
     background-color: #ea4d35;
     color: #fff;
     text-shadow: 1px 1px 1px #000
+}
+
+.imgHero {
+    margin-left: 5rem;
+}
+
+/* aca TERMINA la primer SECCION */
+
+/* aca EMPIEZA la ultima SECCION */
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    z-index: 100;
+    transform: rotate(-3deg);
+}
+.fa-asterisk {
+    color: #ea4d35;
+    font-size: 1.2rem;
+}
+.textoHero > p > i {
+    font-size: 1.2rem;
+    margin: 0px 5px;
 }
