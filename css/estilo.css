@@ -2,11 +2,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Bai Jamjuree', sans-serif;
+    
 }
 
 /* aca EMPIEZA el HEADER */
-
-header {
+.responsive {
+    display: none;
+}
+.pc {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +61,7 @@ header {
 /* aca EMPIEZA el HERO */
 .hero {
     display: flex;
-    flex-wrap: wrap;
+    flex-grow: 1;
 }
 .textoHero {
     margin-left: 13%;
@@ -126,6 +129,15 @@ header {
     align-items: center;
     z-index: 100;
     transform: rotate(-3deg);
+    padding: 1rem 0;
+    margin-right: -3px;
+    margin-left: -3px;
+}
+.design {
+    padding-left: 10px;
+}
+.art {
+    padding-right: 10px;
 }
 .fa-asterisk {
     color: #ea4d35;
@@ -134,4 +146,46 @@ header {
 .textoHero > p > i {
     font-size: 1.2rem;
     margin: 0px 5px;
+}
+@media screen and (min-width: 1205px) {
+    body {
+        overflow: hidden;
+        height: 100vh;
+    }
+}
+@media screen (min-width: 501px) and (max-width: 1205px) {
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    .boton2 {
+        flex-wrap: wrap;
+    }
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .botones {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+        overflow: auto;
+    }
+    .pc {
+        display: none;
+    }
+    .responsive {
+        display: block;
+    }
+    .nav-responsive {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-responsive > li > a {
+        text-decoration: none;
+    }
 }
