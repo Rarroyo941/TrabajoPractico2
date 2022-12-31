@@ -264,12 +264,11 @@ body {
     .responsive-button {
         float: right;
         font-size: 25px;
-        padding: 5px 5px 15px 5px;
-
+        padding: 5px 15px 30px 50px;
         position: absolute;
         color: #ea4d35;
         text-align: right;
-        margin-left: 75vw;
+        margin-left: 65vw;
         margin-top: -3.5rem;
     }
     .nav-li__container {
