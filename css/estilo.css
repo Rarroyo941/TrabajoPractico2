@@ -235,7 +235,7 @@ body {
     }
     .nav-responsive {
         width: 100%;
-        height: 50px;
+        height: 40px;
         display: block;
         position: absolute;
      }
@@ -264,7 +264,8 @@ body {
     .responsive-button {
         float: right;
         font-size: 25px;
-        padding: 5px;
+        padding: 5px 5px 15px 5px;
+
         position: absolute;
         color: #ea4d35;
         text-align: right;
@@ -277,12 +278,12 @@ body {
         background-color: #ea4d35;
         height: 100vh;
         margin-left: -45px;
-        padding: 1rem 3rem;
+        padding: 2rem 3rem;
         transition: 1s;
         width: 70%;
     }
     .nav-responsive:hover > .nav-li__container {
-        top: 0;
+        top: -15px;
     }
     .textoHero {
         margin-top: 2rem;
